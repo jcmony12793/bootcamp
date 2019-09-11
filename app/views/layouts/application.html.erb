@@ -33,8 +33,22 @@
 	<hr />
 	  
 	<br class="clear" />
+	<div class="container">
+	  <%= yield %>
+	</div>
 	
-	<%= yield %>
+	<div class="footer">
+	  <div class="container">
+	    <div class="row">
+		  <div class="col-6">
+            <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+          </div>
+          <div class="col-6 footer-blurb">
+            Made by <a href="https://marshallguttormsson.netlify.com/">Marshall Guttormsson</a><br />
+          </div>
+		</div>
+	  </div>  
+	</div>
 
   </body>
 </html>
